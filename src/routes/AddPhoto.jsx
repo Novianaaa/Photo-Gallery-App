@@ -8,7 +8,7 @@ const AddPhoto = () => {
   const [error, setError] = useState(null);
   const navigate = useNavigate();
 
-  const baseUrl = "http://localhost:3001/photos";
+  const baseUrl = "https://gallery-app-server.vercel.app/photos";
   const addPhoto = (e) => {
     e.preventDefault();
 
