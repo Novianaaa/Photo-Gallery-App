@@ -10,7 +10,7 @@ const Photos = () => {
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState(null);
 
-  const baseUrl = "http://localhost:3001/photos";
+  const baseUrl = "https://gallery-app-server.vercel.app/photos";
   const fetchImages = (url) => {
     fetch(url).then((response) => {
       if (response.status === 403) {

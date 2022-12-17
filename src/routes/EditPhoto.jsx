@@ -10,7 +10,7 @@ const EditPhoto = () => {
   const navigate = useNavigate();
   const { id } = useParams();
 
-  const baseUrl = "http://localhost:3001/photos";
+  const baseUrl = "https://gallery-app-server.vercel.app/photos";
   const editPhoto = (e) => {
     e.preventDefault();
     fetch(baseUrl + '/' + id, {
